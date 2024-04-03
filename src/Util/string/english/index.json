@@ -1,4 +1,13 @@
 {
-"label_email":"Email",
-"label_mobile":"Mobile"    
+"label_name":"Name :-",
+"label_profile":"Profile :-"    ,
+"label_email":"Email :-"    ,
+"label_mobile":"Mobile No :-"    ,
+"label_address":"Address :-"
+,
+"label_Abountme":"About Me",
+"label_Linkdik":"Linkedin Url :-",
+"label_title_contact":"Contact Information",
+ 
+
 }

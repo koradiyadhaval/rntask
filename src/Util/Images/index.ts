@@ -1,0 +1,1 @@
+export const UserImage=require('../../../assets/Images/Picture1.png')
