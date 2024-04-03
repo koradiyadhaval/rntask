@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, TouchableOpacity } from 'react-native';
 import { ScrollView } from 'react-native';
 import { React$Node } from '../../TypesAndInterfaces/AppTypes';
 import { color_gray, color_light_gray } from '../../Util/colors';
@@ -11,6 +11,7 @@ import { TextView } from '../TextView';
 import english from '../../Util/string/english/index.json';
 import { AppViewLine } from '../AppViewLine';
 import { TitleView } from '../TitleView';
+import { useNavigation } from '@react-navigation/native';
 interface CompProps {
   // children: any
 
@@ -69,6 +70,8 @@ export const CandidateDetailsView = (props: CompProps) => {
     )
   }
 
+
+  const navigation=useNavigation();
   return (
     <AppView
       key={props?.key}
@@ -83,13 +86,6 @@ export const CandidateDetailsView = (props: CompProps) => {
         ref={props?.ref}
         style={styles.Headerview}>
 
-
-
-        {/* <AppView style={styles.ImageViewStyle}>
-          <AppImageView style={styles.ImageStyle}
-            source={props?.Imageurl}>
-          </AppImageView>
-        </AppView> */}
         <AppView
           style={styles.InfoViewLeftStyle}>
 
@@ -120,21 +116,26 @@ export const CandidateDetailsView = (props: CompProps) => {
 
           </AppViewLine>
 
-          <TitleView text={english.label_Abountme}>
+          <TitleView text={english.label_Abountme}  >
 
           </TitleView>
 
-          <TextView numberOfLines={16} style={[styles.textstyleAboutme ,{marginVertical:10}]}>
-          {
-           props.aboutme
-          }
-        </TextView>
+          <TextView numberOfLines={16} style={[styles.textstyleAboutme, { marginVertical: 10 }]}>
+            {
+              props.aboutme
+            }
+          </TextView>
+          <TouchableOpacity onPress={()=>{
+                  navigation.push("Second");
+          }} style={styles.opacitystyle}>
+            <TextView style={styles.opacitytextstyle}>
+              {english.label_next}
+            </TextView>
+          </TouchableOpacity>
 
         </AppView>
 
-
       </AppView>
-
 
     </AppView>
   )

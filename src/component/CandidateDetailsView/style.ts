@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { color_black, color_gray, color_light_gray } from '../../Util/colors';
+import { color_black, color_blue_light, color_gray, color_light_gray } from '../../Util/colors';
 import { FontRoboto_Black, FontRoboto_Bold, FontRoboto_Medium, FontRoboto_Thin } from '../../Util/fonts';
 
 export const styles = StyleSheet.create({
@@ -38,15 +38,13 @@ export const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     alignContent: 'flex-start',
     flexDirection: 'column',
-    // flex: 1,
-    height: '100%'
+    flex: 1,
+    // height: '100%'
   },
   InfoViewLeftStyle: {
     flex: 0.8,
     paddingHorizontal: 5,
-
     justifyContent: 'flex-start',
-
 
   },
   textstyleName: {
@@ -57,7 +55,7 @@ export const styles = StyleSheet.create({
     fontFamily: FontRoboto_Medium,
     justifyContent: 'center',
     textAlignVertical: 'center'
- 
+
   },
   textstyleAboutme: {
     fontSize: 12,
@@ -67,9 +65,9 @@ export const styles = StyleSheet.create({
     fontFamily: FontRoboto_Medium,
     justifyContent: 'center',
     textAlignVertical: 'center',
-    paddingHorizontal:5,
-    
-    textAlign:'left'
+    paddingHorizontal: 5,
+
+    textAlign: 'left'
   },
   label_style: {
     color: color_gray,
@@ -82,10 +80,27 @@ export const styles = StyleSheet.create({
 
   }
   , styleRowview: {
-    flex: 1,      
+    flex: 1,
     flexDirection: 'row',
     height: 25,
-    maxHeight:25
+    maxHeight: 25
   },
+  opacitystyle: {
+    width: 100, alignSelf: 'center',
+    height: 40, alignContent: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column',
+    marginVertical: 20, backgroundColor: color_blue_light,
+    borderRadius: 30,
+  }, opacitytextstyle: {
+    //  flex:1,
+    fontFamily: FontRoboto_Medium,
+    fontSize: 16,
+    lineHeight: 18, alignSelf: 'center',
+
+    color: 'white',
+    textAlign: 'center',
+    justifyContent: 'center'
+  }
 
 })

@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignContent: 'center',
     backgroundColor: color_light_gray,
-    marginVertical:10,
+    marginVertical:15,
   },
   TextStyle: {
     lineHeight: 16,
