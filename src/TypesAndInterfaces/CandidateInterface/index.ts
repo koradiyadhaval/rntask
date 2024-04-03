@@ -6,6 +6,7 @@ export interface EducationInformation{
     start_years:string,
     end_year:string,
     location:string,
+    uni_name:string
 }
 
 export interface CandidateInterface{
@@ -21,9 +22,13 @@ export interface CandidateInterface{
 }
 
 export const getCandidate=():CandidateInterface=>{
-    const bca:EducationInformation={cource_name:" Bachelor of Computer Applications",name:" JKM BCA & BBA college",start_years:"2007",end_year:"2009",location:"Junagadh, Gujarat, India"}
+    const bca:EducationInformation={cource_name:" Bachelor of Computer Applications",name:" JKM BCA & BBA college",start_years:"2007",end_year:"2009",
+    uni_name:"Saurashtra university",
+    location:"Junagadh, Gujarat, India"}
 
-    const mca:EducationInformation={cource_name:" Master of Computer Applications",name:" MGI",start_years:"2010",end_year:"2013",location:"Rajkot, Gujarat, India"}
+    const mca:EducationInformation={
+        uni_name:'Gujarat Technological University',
+        cource_name:" Master of Computer Applications",name:" MGI",start_years:"2010",end_year:"2013",location:"Rajkot, Gujarat, India"}
 
 
     const data:CandidateInterface={

@@ -10,6 +10,12 @@
 "label_title_contact":"Contact Information",
 "label_next":"Next",
  "label_education_Info":"Education Information",
- "label_work_Info":"Work Experience"
+ "label_work_Info":"Work Experience",
+ "label_course_name":"Course Name :- ",
+ "label_college_name":"College Name :- ",
+ "label_course_uni":"University Name :- ",
+ "label_course_start":"Course Duration :- ",
+ "label_course_location":"Location :- "
+ 
 
 }
